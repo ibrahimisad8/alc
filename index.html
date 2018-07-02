@@ -1,0 +1,91 @@
+
+<html>
+    <head>
+        <title>Free currency converter</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/layout.css" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    </head>
+    <body>
+        <div class="system-loading-big" id="loading"></div>
+        <div class="container">
+                <div class="row">
+                    <div class="col-sm-6" style="margin:0px auto">
+                        <!-- row 1 -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="upper-content">
+                                    <h3>
+                                        <span style="font-size:75px">$</span><br/>
+                                        Currency Converter
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row 2 -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>From</label>
+                                            <select type="text" class="form-control" name="from" id="select_from" required>
+                                                <!-- add options -->
+                                                <option value="">Choose currency / Money</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>To</label>
+                                            <select type="text" class="form-control" name="to" id="select_to" required>
+                                                <!-- add options -->
+                                                <option value="">Choose currency / Money</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Amount</label>
+                                            <input type="text" class="form-control" name="from" id="amount" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Conversion</label>
+                                            <input type="text" style="background: #FFF; font-weight: bold;" class="form-control" name="to" id="conversion" readonly/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-top:15px">
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <input type="text" style="background: #FFF; font-weight: bold;" class="form-control" name="from" id="rate" placeholder="Rate" readonly/>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <button class="btn btn-primary form-control" name="submit" id="btn" >Convert</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row 3 -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="footer">
+                                    <p style="padding-top:9px">
+                                        &copy; Made with free currency converter api, by Ibarhim Isa . 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <script src="./aws.js"></script>
+    </body>
+    </html>
